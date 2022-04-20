@@ -71,7 +71,7 @@ class SoundEngine:
             #     print(f'earlier return clips: {audio_clips} last_word: {last_word}')
             #     return audio_clips
             try:
-                print(f'word: "{word}" audio_clip: {audio_clip}')
+                # print(f'word: "{word}" audio_clip: {audio_clip}')
                 idx = randint(0, len(audio_clip)-1)
                 audio_clip = audio_clip[idx]
             except IndexError:
@@ -87,7 +87,7 @@ class SoundEngine:
         audio_clips: list
             A list of chirps.
         """
-        print(audio_clips)
+        # print(audio_clips)
         for audio_clip in audio_clips:
             audio_clip.play()
             while mixer.get_busy():
